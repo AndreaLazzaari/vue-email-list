@@ -18,11 +18,11 @@
         Lista email
     </h1>
     <div>
-        <ul>
-            <li>
-                {{ listaEmail }}
+        <ol>
+            <li v-for="(email, index) in listaEmail">
+                {{ email[activeIndex] }}
             </li>
-        </ul>
+        </ol>
     </div>
 
 
